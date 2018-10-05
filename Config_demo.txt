@@ -1,0 +1,974 @@
+(Cisco Controller) >config paging disable 
+
+
+(Cisco Controller) >config sessions timeout 0
+
+(Cisco Controller) >show run?
+run-config     running-config 
+(Cisco Controller) >show run-config 
+
+Press Enter to continue... 
+
+System Inventory
+NAME: "Chassis"    , DESCR: "Cisco 5500 Series Wireless LAN Controller"
+PID: AIR-CT5508-K9,  VID: V01,  SN: FXW18054ZZ8
+
+Burned-in MAC Address............................ 54:75:D0:DE:71:40
+Power Supply 1................................... Present, OK
+Power Supply 2................................... Present, OK
+Maximum number of APs supported.................. 300
+
+ 
+
+System Information
+Manufacturer's Name.............................. Cisco Systems Inc.
+Product Name..................................... Cisco Controller
+Product Version.................................. 7.6.130.0
+Bootloader Version............................... 1.0.1
+Field Recovery Image Version..................... 6.0.182.0
+Firmware Version................................. FPGA 1.3, Env 1.6, USB console 1.27
+Build Type....................................... DATA + WPS
+
+System Name...................................... Delta_HQ_WLC1
+System Location.................................. Morrisville, NC
+System Contact................................... 
+System ObjectID.................................. 1.3.6.1.4.1.9.1.1069
+Redundancy Mode.................................. Disabled
+IP Address....................................... 10.0.254.248
+Last Reset....................................... Software reset
+System Up Time................................... 589 days 16 hrs 16 mins 26 secs
+System Timezone Location......................... (GMT -5:00) Eastern Time (US and Canada)
+System Stats Realtime Interval................... 5
+System Stats Normal Interval..................... 180
+
+Configured Country............................... US  - United States
+Operating Environment............................ Commercial (0 to 40 C)
+Internal Temp Alarm Limits....................... 0 to 65 C
+Internal Temperature............................. +44 C
+External Temperature............................. +32 C
+Fan Status....................................... OK
+
+State of 802.11b Network......................... Enabled
+State of 802.11a Network......................... Enabled
+Number of WLANs.................................. 14
+Number of Active Clients......................... 1119
+
+Burned-in MAC Address............................ 54:75:D0:DE:71:40
+Power Supply 1................................... Present, OK
+Power Supply 2................................... Present, OK
+Maximum number of APs supported.................. 300
+
+ 
+
+Redundancy Information
+Redundancy Mode ................................. SSO DISABLED 
+Local State...................................... ACTIVE
+Peer State....................................... N/A 
+Unit............................................. Primary
+Unit ID.......................................... 54:75:D0:DE:71:40
+Redunadancy State................................ N/A 
+Mobility MAC..................................... 54:75:D0:DE:71:40
+Redundancy Management IP Address................. 0.0.0.0
+Peer Redundancy Management IP Address............ 0.0.0.0
+Redundancy Port IP Address....................... 0.0.0.0
+Peer Redundancy Port IP Address.................. 169.254.0.0
+
+ 
+
+AP Bundle Information
+
+Primary AP Image        Size
+----------------        ----
+ap1g1                   10908
+ap1g2                   11368
+ap1g3                   7684
+ap3g1                   10256
+ap3g2                   13480
+ap3g3                   0
+ap801                   7532
+ap802                   8968
+c1130                   5092
+c1140                   10096
+c1250                   7272
+c1520                   8408
+c602i                   3756
+version.info                    4
+
+Secondary AP Image      Size
+------------------      ----
+ap1g2                   10596
+ap3g1                   11088
+ap3g2                   10968
+ap801                   7092
+ap802                   8436
+c1130                   5072
+c1140                   9288
+c1250                   6784
+c1520                   7852
+c602i                   3736
+
+ 
+
+Switch Configuration
+802.3x Flow Control Mode......................... Disable 
+FIPS prerequisite features....................... Disabled
+secret obfuscation............................... Enabled
+Strong Password Check Features
+   case-check.................................... Enabled
+   consecutive-check............................. Enabled
+   default-check................................. Enabled
+   username-check................................ Enabled
+   position-check................................ Disabled
+   case-digit-check.............................. Disabled
+   Min. Password length.......................... 3
+   Min. Upper case chars......................... 0
+   Min. Lower case chars......................... 0
+   Min. Digits chars............................. 0
+   Min. Special chars............................ 0
+Mgmt User 
+   Password Lifetime [days]...................... 0
+   Password Lockout.............................. Disabled
+   Lockout Attempts.............................. 0
+   Lockout Timeout [mins]........................ 0
+SNMPv3 User 
+   Password Lifetime [days]...................... 0
+   Password Lockout.............................. Disabled
+   Lockout Attempts.............................. 3
+   Lockout Timeout [mins]........................ 5
+
+ 
+
+Network Information
+RF-Network Name............................. DELTA_RF
+Web Mode.................................... Enable
+Secure Web Mode............................. Enable
+Secure Web Mode Cipher-Option High.......... Disable
+Secure Web Mode Cipher-Option SSLv2......... Disable
+Secure Web Mode RC4 Cipher Preference....... Disable
+OCSP........................................ Disabled
+OCSP responder URL.......................... 
+Secure Shell (ssh).......................... Enable
+Telnet...................................... Enable
+Ethernet Multicast Forwarding............... Disable
+Ethernet Broadcast Forwarding............... Enable
+IPv4 AP Multicast/Broadcast Mode............ Unicast
+IGMP snooping............................... Disabled
+IGMP timeout................................ 60 seconds
+IGMP Query Interval......................... 20 seconds
+MLD snooping................................ Disabled
+MLD timeout................................. 60 seconds
+MLD query interval.......................... 20 seconds
+User Idle Timeout........................... 24000 seconds
+ARP Idle Timeout............................ 300 seconds
+Cisco AP Default Master..................... Disable
+AP Join Priority............................ Disable
+Mgmt Via Wireless Interface................. Enable
+Mgmt Via Dynamic Interface.................. Disable
+Bridge MAC filter Config.................... Enable
+Bridge Security Mode........................ EAP
+Mesh Full Sector DFS........................ Enable
+AP Fallback ................................ Enable
+Web Auth CMCC Support ...................... Disabled
+Web Auth Redirect Ports .................... 80
+Web Auth Proxy Redirect  ................... Disable
+Web Auth Captive-Bypass   .................. Disable
+Web Auth Secure Web  ....................... Disable
+Fast SSID Change ........................... Enabled
+AP Discovery - NAT IP Only ................. Enabled
+IP/MAC Addr Binding Check .................. Enabled
+CCX-lite status ............................ Disable
+oeap-600 dual-rlan-ports ................... Disable
+oeap-600 local-network ..................... Enable
+oeap-600 Split Tunneling (Printers)......... Disable
+WebPortal Online Client .................... 0
+mDNS snooping............................... Disabled
+mDNS Query Interval......................... 15 minutes
+
+ 
+
+Port Summary
+
+           STP   Admin   Physical   Physical   Link   Link
+Pr  Type   Stat   Mode     Mode      Status   Status  Trap     POE    SFPType    
+-- ------- ---- ------- ---------- ---------- ------ ------- ------- ----------
+1  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+2  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+3  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+4  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+5  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+6  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+7  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+8  Normal  Forw Enable  Auto       1000 Full  Up     Enable  N/A     1000BaseTX  
+
+ 
+
+ 
+
+AP Location
+Total Number of AP Groups........................ 50   
+
+
+Site Name........................................ 002WIL_B1
+Site Description................................. Wilmington, NC Building 1
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 002WIL_B2
+Site Description................................. Wilmington, NC Building 2
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 003CLA-Failover
+Site Description................................. Clarksville, TN
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 004CHA-Failover
+Site Description................................. Charleston, SC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 005LYN-Failover
+Site Description................................. Lynchburg, VA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 006MON
+Site Description................................. Monroe, LA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 007CHT-Failover
+Site Description................................. Chattanooga, TN
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 008HAZ-Failover
+Site Description................................. Hazleton, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 009POT-Failover
+Site Description................................. Pottsville, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 010SUN
+Site Description................................. Lewisburg, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 011SCR
+Site Description................................. DicksonCity, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 012ATL
+Site Description................................. Creative Circus
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 013DAY
+Site Description................................. Dayton, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 014SHR
+Site Description................................. Shreveport, LA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 015CRY
+Site Description................................. Cary, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 016MAD
+Site Description................................. Madison, TN
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 017SPR
+Site Description................................. Springboro, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 018TRO
+Site Description................................. Troy, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 019RAL-Failover
+Site Description................................. Raleigh, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 020WYO.2014
+Site Description................................. Wyomissing, PA (Staff & Student)
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 021GRE.1-Failover
+Site Description................................. Greenville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 021GRE.2-Failover
+Site Description................................. Greenville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 021GRE.3-Failover
+Site Description................................. Greenville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 021GRE.4-Failover
+Site Description................................. Greenville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 022ALL
+Site Description................................. Allentown, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 023FAY-Failover
+Site Description................................. Fayetteville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 025CAR-Failover
+Site Description................................. Carlisle, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 026COL
+Site Description................................. Columbus, GA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 027CON-Failover
+Site Description................................. Conway, SC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 027JAC-Failover
+Site Description................................. Jacksonville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ 029AUG
+Site Description................................. Augusta, GA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 030MAC-Failover
+Site Description................................. Macon, GA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 031ROA
+Site Description................................. Roanoke, VA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 032GUL-Failover
+Site Description................................. Gulfport, MS
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 034WIL
+Site Description................................. Wilkes Barre, PA
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 042TEM-Failover
+Site Description................................. Tempe, AZ
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 043TUC-Failover
+Site Description................................. Tucson, AZ
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 050ZAR-Failover
+Site Description................................. El Paso - Zaraosa, TX
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 051SPK
+Site Description................................. IS - Sunland Park, NM
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 052DAL
+Site Description................................. Intl Schools, Dallas, TX
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 061CLE-Failover
+Site Description................................. Independence, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 063COH
+Site Description................................. Columbus, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 068SHA
+Site Description................................. Sharonville, OH
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 098ALX_Failover
+Site Description................................. Alexandria Failover group
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 107CHT-Failover
+Site Description................................. CDL - Chattanooga, TN
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+
+Site Name........................................ 119RAL-Failover
+Site Description................................. CDL - Raleigh, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+
+Site Name........................................ 122ALL
+Site Description................................. Allentown (Annex)
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 128JAC-Failover
+Site Description................................. Annex - Jacksonville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ 228JAC-Failover
+Site Description................................. CDL - Jacksonville, NC
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+Site Name........................................ CRC
+Site Description................................. Virginia Beach Office
+Venue Group Code................................. Unspecified
+Venue Type Code.................................. Unspecified
+
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+
+Site Name........................................ default-group
+Site Description................................. <none>
+NAS-identifier................................... Delta_HQ_WLC1
+AP Operating Class............................... Not-configured
+
+
+ 
+
+ 
+
+Interface Configuration
+Interface Name................................... cordless.phones
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.25.12.247
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.25.12.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 20        
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.18
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... creative circus
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 172.30.19.248
+IP Netmask....................................... 255.255.252.0
+IP Gateway....................................... 172.30.19.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 51        
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.18
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... delta staff
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.202.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.202.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 10        
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.18
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... delta student
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.192.168.248
+IP Netmask....................................... 255.255.254.0
+IP Gateway....................................... 10.192.168.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 168       
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. Unconfigured
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... delta-mobile
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.204.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.204.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 1         
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.18
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... delta.guest
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.26.3.252
+IP Netmask....................................... 255.255.0.0
+IP Gateway....................................... 10.26.3.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 26        
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.100.210.230
+Secondary DHCP Server............................ 10.100.210.231
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... restrict_guest
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... hq-guest
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.203.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.203.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 203       
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.18
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... hq-wireless
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.201.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.201.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 201       
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.200.253
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... hq_staff
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.206.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.206.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. 206       
+Quarantine-vlan.................................. 0
+NAS-Identifier................................... Delta_HQ_WLC1
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.200.253
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... No
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... management
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 10.0.254.248
+IP Netmask....................................... 255.255.255.0
+IP Gateway....................................... 10.0.254.254
+External NAT IP State............................ Disabled
+External NAT IP Address.......................... 0.0.0.0
+VLAN............................................. untagged  
+Quarantine-vlan.................................. 0
+Active Physical Port............................. LAG (13)
+Primary Physical Port............................ LAG (13)
+Backup Physical Port............................. Unconfigured
+DHCP Proxy Mode.................................. Global
+Primary DHCP Server.............................. 10.0.37.12
+Secondary DHCP Server............................ Unconfigured
+DHCP Option 82................................... Disabled
+IPv4 ACL......................................... Unconfigured
+mDNS Profile Name................................ Unconfigured
+AP Manager....................................... Yes
+Guest Interface.................................. No
+L2 Multicast..................................... Enabled
+
+Interface Name................................... redundancy-management
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 0.0.0.0
+
+Interface Name................................... redundancy-port
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 0.0.0.0
+
+Interface Name................................... service-port
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 0.0.0.0
+DHCP Protocol.................................... Enabled
+AP Manager....................................... No
+Guest Interface.................................. No
+
+Interface Name................................... virtual
+MAC Address...................................... 54:75:d0:aa:zz:00
+IP Address....................................... 1.1.1.1
+Virtual DNS Host Name............................ wireless.auth2.com
+AP Manager....................................... No
+Guest Interface.................................. No
+
+
+mDNS AP Summary
+
+Number of mDNS APs............................. 0
+
+
+ 
+
+ PMIPv6 Global Configuration
+
+ PMIPv6 Profile Summary
+
+No Profile Created.
+
+ PMIPv6 MAG Statistics
+
+PMIPv6 domain has to be configured first
+
+ PMIPv6 MN Bindings
+
+
+
+(Cisco Controller) >
