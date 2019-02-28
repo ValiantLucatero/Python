@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib.pyplot as plt  # Biblioteca de gráficos
+import numpy as np  # Biblioteca matemática
 
 # Función
 
