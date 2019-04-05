@@ -6,21 +6,21 @@ import numpy as np  # Biblioteca matemática
 
 
 def f(x):  # Función original
-    return x**3 + 1.24 * x**2 - 28.56 * x + 16.474
+    return ((np.pi * x**2) * (3 - x)) / (0.5 * 3)
 
 
 def fp(x):  # Primera derivada
-    return 3 * x**2 + 2.48 * x - 28.56
+    return x * (12.5664 - (6.28319 * x))
 
 
 def fpp(x):  # Segunda derivada
-    return 6 * x + 2.48
+    return 12.5664 - (12.5664 * x)
 
 
 # Parámetros del Método
-a = -1
-b = 2
-x0 = 0
+a = 2
+b = 4
+x0 = 5
 
 # Gráfica de la función
 plt.figure(1)
@@ -33,7 +33,7 @@ plt.legend()
 
 # Método
 maxIter = 100  # Número máximo de iteraciones
-epsilon = 1 * 10**(-8)  # Tolerancia
+epsilon = 1 * 10**(-4)  # Tolerancia
 
 if abs((f(x0) * fpp(x0)) / (fp(x0))**2) < 1:  # Criterio de convergencia
     print("Converge")
