@@ -1,13 +1,10 @@
-from scipy import linalg, array
-
-A = array([[7, 3, -1, 2],
-           [3, 8, 1, -4],
-           [-1, 1, 4, -1],
-           [2, -4, -1, 6]])
-
-P, L, U = linalg.lu(A)
-
-print(f"A:{A}")
-print(f"P:{P}")
-print(f"L:{L}")
-print(f"U:{U}")
+import numpy as np
+from scipy.linalg import lu_factor, lu_solve
+A = np.array([[120, -20, 0],
+              [-80, 80, 0],
+              [-40, -60, 120]])
+b = np.array([500, 0, 200])
+lu, piv = lu_factor(A)
+x = lu_solve((lu, piv), b)
+print("Soluciones: ")
+print(x)
