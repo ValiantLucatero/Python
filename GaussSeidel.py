@@ -1,17 +1,10 @@
 import numpy as np
 
-A = np.array([[1, 1, 0, 0, 0, 1, 0, 0, 0, 0],
-              [0, 0, 0, -1, 1, -1, 0, 0, 0, 0],
-              [0, -1, 1, 0, 0, 0, 0, 0, 0, 0],
-              [0, 0, -1, 1, 0, 0, 0, 0, 0, 0],
-              [0, 10, 0, 0, 0, 0, 1, -1, 0, 0],
-              [5, 0, 0, 0, 0, 0, 1, 0, 0, 0],
-              [0, 0, 5, 0, 0, 0, 0, 1, -1, 0],
-              [0, 0, 0, 15, 0, 0, 0, 0, 1, -1],
-              [0, 0, 0, 0, 20, 0, 0, 0, 0, 1],
-              [0, 0, 0, 0, 0, 10, 1, 0, 0, -1]])  # matriz de coeficientes
-b = np.array([0, 0, 0, 0, 0, 200, 0, 0, 0, 0])  # matriz de resultados
-x0 = np.array([0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
+A = np.array([[120, -20, 0],
+              [-80, 80, 0],
+              [-40, -60, 120]])  # matriz de coeficientes
+b = np.array([500, 0, 200])  # matriz de resultados
+x0 = np.array([0.0, 0.0, 0.0])  # matriz de inicio (en ceros esta bien)
 print(f"A = {A}")
 print(f"b = {b}\n")
 n = len(A)  # Devuelve el tamaño de la primera dimensión de la matriz
@@ -49,7 +42,7 @@ for k in range(maxIter):
                 s = s + A[i, j] * xi[j]
         xi[i] = (1 / A[i, i]) * (b[i] - s)
     e = np.linalg.norm(xi - x0)
-    print(f"x{k+1} = {xi}")
+    print(f"Iteración {k+1} = {xi}")
     if e < epsilon:
         break
     x0 = np.copy(xi)

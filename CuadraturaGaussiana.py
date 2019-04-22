@@ -7,17 +7,17 @@ x = symbols('x')
 
 
 def f(x):
-    return np.sin(x) + np.exp(x)
+    return np.sin(x) + x * np.exp(x) + np.log(x)
 
 
 def F(x):
-    return -np.cos(x) + np.exp(x)
+    return np.exp(x) * (x - 1) - x + x * np.log(x) - np.cos(x)
 
 
 # Intervalo de integración
-a = 0
-b = 100
-n = 3  # Grado del polinomio
+a = 2
+b = 3
+n = 8  # Grado del polinomio
 
 
 # Polinomios de Legendre
@@ -45,5 +45,6 @@ for i in range(n):
 s = (b - a) / 2 * s
 print(f"La aproximación de la integral es: {s}")
 vr = F(b) - F(a)
+print(vr)
 er = abs((vr - s) / vr)
 print(f"El error es: {er}")

@@ -33,9 +33,10 @@ def gauss_jordan(m, eps=1.0 / (10**10)):
     return True
 
 
-A = np.array([[23.0, 43.0, 6.0, 85.0],  # matriz a resolver
-              [11.0, 57.0, 0.0, 23.0],
-              [7.0, 8.0, 78.0, 52.0]])
+A = np.array([[0.6, 0.5, 0.0, -0.3, 0.0],  # matriz a resolver
+              [0.2, 0.6, 0.6, -0.5, 0.0],
+              [1.0, -1.0, 0.0, 0.0, -100.0],
+              [1.0, 1.0, 1.0, -1.0, 0.0]])
 
 Ared = np.delete(A, A.ndim + 1, A.ndim - 1)  # Matriz no ampliada (sin respuestas)
 
@@ -43,6 +44,7 @@ print("ANÁLISIS NUMÉRICO\nGRUPO:6\nMÉTODO DE ELIMINACIÓN COMPLETA DE GAUSS-J
 print("Integrantes:\nAlmendarez Estrada Andrea Saraí\nCázares López Jessie Alejandro\nHernández Soriano Luz María\nLucatero Tenorio José Andrés\nMejia Trejo Jaqueline\nPérez Hernández Daniel")
 
 print(f"Matriz a reducir:\n{A}")
+print(f"Matriz no ampliada:\n{Ared}")
 if gauss_jordan(A):
     print(f"Matriz escalonada reducida:\n{A}\nDeterminante de la matriz: {np.linalg.det(Ared)}\nMultiplicación de pivotes: {multPiv}")
 else:
